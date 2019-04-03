@@ -1,75 +1,44 @@
-a.information-icon {
+a.information-icon, a.bullhorn-icon, a.file-multiple-icon, a.email-icon, a.account-icon, a.bell-icon,
+a.message-processing-icon, a.cog-icon, a.help-circle-icon {
   background-image: url(../Icons/information.svg);
   padding-left: 30px;
   padding-bottom: 10px;
   background-repeat: no-repeat;
   display: block;
+  width: 21px;
+  height: 21px;
   }
-
 
   a.bullhorn-icon {
     background-image: url(../Icons/bullhorn.svg);
-    padding-left: 30px;
-    padding-bottom: 10px;
-    background-repeat: no-repeat;
-    display: block;
-    }
-
+  }
 
   a.file-multiple-icon {
     background-image: url(../Icons/file-multiple.svg);
-    padding-left: 30px;
-    padding-bottom: 10px;
-    background-repeat: no-repeat;
-    display: block;
   }
 
   a.email-icon {
     background-image: url(../Icons/email.svg);
-    padding-left: 30px;
-    padding-bottom: 10px;
-    background-repeat: no-repeat;
-    display: block;
   }
 
   a.account-icon {
     background-image: url(../Icons/account.svg);
-    padding-left: 30px;
-    padding-bottom: 10px;
-    background-repeat: no-repeat;
-    display: block;
   }
 
   a.bell-icon {
     background-image: url(../Icons/bell.svg);
-    padding-left: 30px;
-    padding-bottom: 10px;
-    background-repeat: no-repeat;
-    display: block;
   }
 
   a.message-processing-icon {
     background-image: url(../Icons/message-processing.svg);
-    padding-left: 30px;
-    padding-bottom: 10px;
-    background-repeat: no-repeat;
-    display: block;
   }
 
   a.cog-icon {
     background-image: url(../Icons/cog.svg);
-    padding-left: 30px;
-    padding-bottom: 10px;
-    background-repeat: no-repeat;
-    display: block;
   }
 
   a.help-circle-icon {
     background-image: url(../Icons/help-circle.svg);
-    padding-left: 30px;
-    padding-bottom: 10px;
-    background-repeat: no-repeat;
-    display: block;
   }
 
 
