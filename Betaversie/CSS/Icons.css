@@ -1,3 +1,29 @@
+padding: {
+
+}
+
+a.CoE-logo {
+  background-image: url(../Images/CoE_logo.png);
+  margin-top:
+  padding-left: 30px;
+  padding-bottom: 50px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+}
+
+nav {
+  background-color:#006EFF;
+  width: 79px;
+  height: 100vh;
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 a.information-icon, a.bullhorn-icon, a.file-multiple-icon, a.email-icon, a.account-icon, a.bell-icon,
 a.message-processing-icon, a.cog-icon, a.help-circle-icon {
   background-image: url(../Icons/information.svg);
@@ -5,8 +31,9 @@ a.message-processing-icon, a.cog-icon, a.help-circle-icon {
   padding-bottom: 10px;
   background-repeat: no-repeat;
   display: block;
-  width: 21px;
+  width: 109px;
   height: 21px;
+  fill:#ffffff;
   }
 
   a.bullhorn-icon {
