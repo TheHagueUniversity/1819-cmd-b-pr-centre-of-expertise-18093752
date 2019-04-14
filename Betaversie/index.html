@@ -2,13 +2,13 @@
   <head>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/Icons.css" type="text/css"/>
+    <link rel="stylesheet" href="CSS/Styles.css" type="text/css"/>
     <title>Home</title>
   </head>
 <html>
 <body>
   <header>
-    <nav>
+    <nav class="fixed-position">
         <a href="#" class="CoE-logo"> </a>
         <!-- Escape hatch logo -->
         <a href="#" class="information-icon">  </a>
@@ -19,6 +19,10 @@
         <!-- Publicaties -->
         <a href="#" class="email-icon">  </a>
         <!-- Contact -->
+
+        <hr id="menu-rule">
+        <!-- Scheidingslijn in het midden van het menu -->
+
         <a href="#" class="account-icon">  </a>
         <!-- Mijn profiel -->
         <a href="#" class="bell-icon">  </a>
@@ -37,9 +41,37 @@
        padding left geven in dezelfde styleregel, voor de achtergrond afbeelding of aan de A-->
        <!-- koppel de naam van de SVG aan de class -->
     </nav>
+    <div class="fixed-position" id="search-container">
+      <form action="http://www.centreofexpertise.nl/search.php">
+        <input type="search" name="searchbar" placeholder="Zoek naar personen, artikelen of publicaties" id="search-bar"/>
+        <input type="submit" value=" " id="search-icon"/>
+      </form>
+      <figure>
+        <img src="Images/Contact/Dr_Erwin_de_Vlugt_rond.png" alt="Dr Erwin de Vlugt" title="Profielfoto van Erwin de Vlugt"
+        class="profile-image"/>
+      </figure>
+    </div>
+
+    <div id="search-rule">
+    </div>
+    <!-- Verticale lijn tussen account en zoekbalk -->
+
   </header>
-  <main>
+  <main id="main-page">
+    <section>
+      <ul>
+        <li><a class="tab-links" href="#">Kenniskringlid</a></li>
+        <li><a class="tab-links" href="#">Docent</a></li>
+        <li><a class="tab-links" href="#">Student</a></li>
+        <li><a class="tab-links" href="#">Partner</a></li>
+      </ul>
+    </section>
+    <!-- De hyperlinks die naar de andere versies (doelgroepen) van het Centre of Expertise leiden;
+    docenten, studenten en partners -->
+
     <article>
+        <h1> TEST  partner docent</h1>
+    </article>
   </main>
 
 </html>

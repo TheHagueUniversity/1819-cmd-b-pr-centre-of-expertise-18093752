@@ -1,12 +1,8 @@
-padding: {
-
-}
-
 a.CoE-logo {
   background-image: url(../Images/CoE_logo.png);
-  margin-top:
-  padding-left: 30px;
-  padding-bottom: 50px;
+  margin:20px 0px 90px 0px;
+  /*padding-left: 30px;
+  padding-bottom: 50px;*/
   background-repeat: no-repeat;
   display: block;
   width: 90px;
@@ -16,22 +12,25 @@ a.CoE-logo {
 
 nav {
   background-color:#006EFF;
-  width: 79px;
+  width: 85px;
   height: 100vh;
-  padding: 30px;
+  padding: 0px;
   position: fixed;
   top: 0;
   left: 0;
+  background-position: center;
 }
 
 a.information-icon, a.bullhorn-icon, a.file-multiple-icon, a.email-icon, a.account-icon, a.bell-icon,
 a.message-processing-icon, a.cog-icon, a.help-circle-icon {
   background-image: url(../Icons/information.svg);
-  padding-left: 30px;
-  padding-bottom: 10px;
+  /*padding-left: 30px;
+  padding-bottom: 10px;*/
+  /*padding: 10px 10px 10px 30px; backgroundimage trekt zich niks aan van de padding*/
+  margin:30px;
   background-repeat: no-repeat;
   display: block;
-  width: 109px;
+  width: 21px;
   height: 21px;
   fill:#ffffff;
   }
@@ -68,6 +67,52 @@ a.message-processing-icon, a.cog-icon, a.help-circle-icon {
     background-image: url(../Icons/help-circle.svg);
   }
 
+.fixed-position {
+    position:fixed;
+}
 
+#menu-rule {
+    border: 0.7px solid #5395FF;
+    width: 60px;
+    margin: auto;
+}
+
+#search-container {
+    width: 100vw;
+    height: 60px;
+    background-color:#FFFFFF;
+    margin: 0px 0px 0px 85px;
+    position: fixed;
+    top: 0;
+}
+
+#search-bar{
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  width:70%;
+  height: 40px;
+  border: none;
+  margin: 10px 0px 10px 40px;
+  font-size: 15px;
+}
+
+#search-icon{
+  width: 25px;
+  height: 25px;
+  background-image: url(../Icons/magnify.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+  border: none;
+}
+
+#search-rule {
+  border-left: 1.5px solid #F2F4F8;
+  height: 60px;
+  position: relative; /* (?? was absolute) */
+  left: 85%;
+  margin-left: -3px;
+  top: 0;
+}
 
 /* bovenaan de algemene gegevens die zich herhalen samenvoegen in 1 CSS, de url source apart in een eigen CSS regel
