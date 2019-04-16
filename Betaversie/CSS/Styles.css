@@ -13,12 +13,6 @@ body {
   margin: 60px 0px 0px 85px;
 }
 
-img.profile-image {
-  width: 38px;
-  height: 38px;
-  position: fixed;
-}
-
 .dropdown-content{
   display: none;
 }
@@ -38,10 +32,17 @@ ul a.tab-links {
   color: #8698AA;
 }
 
+ul a.tab-links:active {
+  text-decoration: none;
+  color: #8698AA;
+  border-bottom: 3px solid #006EFF;
+}
+
 ul a.tab-links:hover {
   text-decoration: none;
   color: #002045;
 }
+
 /* styling puur voor de vier hyperlinks op de homepage */
 
 li {

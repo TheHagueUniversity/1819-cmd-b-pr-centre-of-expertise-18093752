@@ -1,8 +1,8 @@
 <!DOCTYPE html>
   <head>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/Styles.css" type="text/css"/>
+    <link rel="stylesheet" href="CSS/Header_2.css" type="text/css"/>
     <title>Home</title>
   </head>
 <html>
@@ -41,20 +41,19 @@
        padding left geven in dezelfde styleregel, voor de achtergrond afbeelding of aan de A-->
        <!-- koppel de naam van de SVG aan de class -->
     </nav>
-    <div class="fixed-position" id="search-container">
-      <form action="http://www.centreofexpertise.nl/search.php">
-        <input type="search" name="searchbar" placeholder="Zoek naar personen, artikelen of publicaties" id="search-bar"/>
-        <input type="submit" value=" " id="search-icon"/>
-      </form>
-      <figure>
-        <img src="Images/Contact/Dr_Erwin_de_Vlugt_rond.png" alt="Dr Erwin de Vlugt" title="Profielfoto van Erwin de Vlugt"
-        class="profile-image"/>
-      </figure>
+    <div class="topvak-container">
+      <div class="zoek-vlak">
+         <input type="search" name="zoekbalk" class="zoekbalk" placeholder="Typ hier om te zoeken..." />
+         <a href="#" class="zoek-icoon"></a>
+      </div>
+      <div class="profiel-vlak">
+        <a class="profiel-naam">Erwin de Vlugt</a>
+        <figure class="profiel-foto">
+          <img src="Dr_Erwin_de_Vlugt_rond.png" alt="Profiel Foto">
+        </figure>
+        <a href="#" class="profiel-menu"></a>
+      </div>
     </div>
-
-    <div id="search-rule">
-    </div>
-    <!-- Verticale lijn tussen account en zoekbalk -->
 
   </header>
   <main id="main-page">
@@ -70,7 +69,6 @@
     docenten, studenten en partners -->
 
     <article>
-        <h1> TEST  partner docent</h1>
     </article>
   </main>
 

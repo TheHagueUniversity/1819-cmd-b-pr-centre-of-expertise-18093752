@@ -77,42 +77,76 @@ a.message-processing-icon, a.cog-icon, a.help-circle-icon {
     margin: auto;
 }
 
-#search-container {
-    width: 100vw;
-    height: 60px;
-    background-color:#FFFFFF;
-    margin: 0px 0px 0px 85px;
-    position: fixed;
-    top: 0;
+.topvak-container {
+  margin-left: 85px;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  margin-bottom: 10px;
 }
 
 #search-bar{
   -moz-appearance: none;
   -webkit-appearance: none;
   width:70%;
-  height: 40px;
-  border: none;
-  margin: 10px 0px 10px 40px;
-  font-size: 15px;
+.zoek-vlak {
+  width: 1100px;
+  float: left;
 }
 
-#search-icon{
-  width: 25px;
-  height: 25px;
-  background-image: url(../Icons/magnify.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: #FFFFFF;
+.zoekbalk {
+  font-size: 13px;
+  padding: 0px 20px;
   border: none;
-}
-
-#search-rule {
-  border-left: 1.5px solid #F2F4F8;
   height: 60px;
-  position: relative; /* (?? was absolute) */
-  left: 85%;
-  margin-left: -3px;
-  top: 0;
+  float: left;
+  width: 1030px;
 }
+
+.zoek-icoon {
+  float: left;
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("magnify.svg");
+  margin-left: 15px;
+}
+
+.profiel-foto {
+  float: left;
+  margin: 0px 20px;
+  display: inline-block;
+}
+
+.profiel-foto > img{
+  height: 38px;
+  width: 38px;
+}
+
+.profiel-naam {
+  margin-top: 10px;
+  float: left;
+}
+
+.profiel-vlak {
+  border-left: solid 1px #f2f4f8;
+  float: left;
+  height: 40px;
+  padding: 10px;
+  padding-left: 100px;
+}
+
+.profiel-menu {
+  float: left;
+  height: 40px;
+  width: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("Arrow-down.svg");
+}
+
 
 /* bovenaan de algemene gegevens die zich herhalen samenvoegen in 1 CSS, de url source apart in een eigen CSS regel
