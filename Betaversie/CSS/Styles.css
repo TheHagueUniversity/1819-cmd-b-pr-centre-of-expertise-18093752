@@ -115,8 +115,20 @@ text-align: center;
 vertical-align: top;
 }
 
+.sevencolumns{
+width: 58.25%;
+margin: 0px 0.75% 0px 0.75%;
+display: inline-block;
+text-align: center;
+vertical-align: top;
+}
+
 .text-left{
   text-align: left;
+}
+
+.text-right{
+  text-align: right;
 }
 
 .nopadding{
