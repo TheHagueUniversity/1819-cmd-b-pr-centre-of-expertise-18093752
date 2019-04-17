@@ -125,6 +125,7 @@ vertical-align: top;
 .nopadding{
 padding: 0px;
 }
+/* Overruled de standaard padding*/
 
 .fullWidth{
   width: 75.5%;
