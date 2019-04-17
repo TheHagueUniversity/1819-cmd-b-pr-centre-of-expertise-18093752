@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="CSS/Styles.css" type="text/css"/>
-    <link rel="stylesheet" href="CSS/Header_2.css" type="text/css"/>
+    <link rel="stylesheet" href="CSS/Header.css" type="text/css"/>
     <title>Home</title>
   </head>
 <html>
@@ -32,6 +32,7 @@
         <a href="#" class="cog-icon">  </a>
         <!-- Mijn instellingen -->
         <a href="#" class="help-circle-icon">  </a>
+      </nav>
         <!-- Help -->
 
         <!-- noem de class naar de specifieke icon, zoals de library van fontawesome -->
@@ -40,37 +41,136 @@
         class
        padding left geven in dezelfde styleregel, voor de achtergrond afbeelding of aan de A-->
        <!-- koppel de naam van de SVG aan de class -->
-    </nav>
-    <div class="topvak-container">
-      <div class="zoek-vlak">
-         <input type="search" name="zoekbalk" class="zoekbalk" placeholder="Typ hier om te zoeken..." />
-         <a href="#" class="zoek-icoon"></a>
-      </div>
-      <div class="profiel-vlak">
-        <a class="profiel-naam">Erwin de Vlugt</a>
-        <figure class="profiel-foto">
-          <img src="Dr_Erwin_de_Vlugt_rond.png" alt="Profiel Foto">
-        </figure>
-        <a href="#" class="profiel-menu"></a>
-      </div>
-    </div>
+       <div class="top-container">
+         <div class="search-container">
+            <input type="search" name="searchbar" class="searchbar" id="searchbar" placeholder="Typ hier om te zoeken..." />
+            <a href="#" class="search-icon"></a>
+            <div class="profile-container">
+              <a class="profile-name">Erwin de Vlugt</a>
+              <figure class="profile-img">
+                <img src="Dr_Erwin_de_Vlugt_rond.png" alt="Profiel Foto">
+              </figure>
+              <a href="#" class="profile-menu"></a>
+            </div>
+         </div>
+
+       </div>
 
   </header>
   <main id="main-page">
     <section>
-      <ul>
+      <ul id="tabs">
         <li><a class="tab-links" href="#">Kenniskringlid</a></li>
         <li><a class="tab-links" href="#">Docent</a></li>
         <li><a class="tab-links" href="#">Student</a></li>
         <li><a class="tab-links" href="#">Partner</a></li>
       </ul>
     </section>
+    <section>
+      <img src="Images/Header.jpg" class="fullWidth" id="header-img"/>
+    </section>
     <!-- De hyperlinks die naar de andere versies (doelgroepen) van het Centre of Expertise leiden;
     docenten, studenten en partners -->
+    <section>
+    <main class="stats">
+      <h1>Centre of expertise in cijfers</h1>
+        <div class="threecolumns stats" id="kenniskringleden">
+          <img src="Images/stats.png"/>
+      <h1>46</h1>
+      <span>Kenniskringleden</span>
+        </div>
 
-    <article>
-    </article>
-  </main>
+        <div class="threecolumns stats" id="kenniskringleden">
+          <img src="Images/stats.png"/>
+      <h1>46</h1>
+      <span>Kenniskringleden</span>
+        </div>
+
+      <div class="threecolumns stats" id="kenniskringleden">
+      <img src="Images/stats.png"/>
+      <h1>46</h1>
+      <span>Kenniskringleden</span>
+      </div>
+      </main>
+      </section>
+
+    <section id="Agenda">
+      <header>
+        <h1 id="agenda-head">Agenda</h1>
+      </header>
+        <main class="agenda">
+    <div class="threecolumns agenda">
+    <h2>19 Februari</h2>
+    <p>Samenwerking GGD Haaglanden en De Haagse Hogeschool in
+    ‘Living Lab’</p>
+    </div>
+    <div class="threecolumns agenda">
+    <h2>29 Januari</h2>
+    <p>Creatief met sensoren werken in 24 uur tijd voor een praktische en
+    betaalbare oplossing</p>
+    </div>
+    <div class="threecolumns agenda">
+    <h2>5 April</h2>
+    <p>De intreerede van het nieuwe lectoraat: 'Impact of Sport'</p>
+    </div>
+    </main>
+    </section>
+    <section class="news">
+    <header>
+    <h1 class="news-head">Nieuws & Updates</h1>
+    <h3 class="news-head">Meest gelezen artikelen</h3>
+    </header>
+    <main class="news">
+    <div class="fourcolumns news">
+      <h2>“Physical Literacy”; bouwstenen voor een leven lang bewegen van jong tot oud</h2>
+      <p>Hoe mooi zou het zijn als iedereen motorisch vaardig is, kennis heeft over het belang van sport en bewegen en in staat is om een krachtige beweeg-
+omgeving voor zichzelf en anderen te creëeren.</p>
+<span class="cloudtag-light">Revalidatie</span>
+<span class="cloudtag-light">Technology for Health</span>
+    </div>
+    <div class="onecolumn news spacer">
+    </div>
+    <div class="fourcolumns news">
+      <h2>“Physical Literacy”; bouwstenen voor een leven lang bewegen van jong tot oud</h2>
+      <p>Hoe mooi zou het zijn als iedereen motorisch vaardig is, kennis heeft over het belang van sport en bewegen en in staat is om een krachtige beweeg-
+omgeving voor zichzelf en anderen te creëeren.</p>
+<span class="cloudtag-light">Revalidatie</span>
+<span class="cloudtag-light">Technology for Health</span>
+<span class="circles">...</span>
+    </div>
+    <div class="fourcolumns news-hot">
+      <h1>Nieuws</h1>
+      <p class="news-hot">Hoe mooi zou het zijn als iedereen motorisch vaardig is, kennis heeft over het belang van sport en bewegen en in staat is om een krachtige beweeg-
+omgeving voor zichzelf en anderen te creëeren.</p>
+    </div>
+    <div class="onecolumn spacer">
+    </div>
+    <div class="fourcolumns">
+
+      <h2 class="pub-head">Meest gelezen publicaties</h2>
+
+      <div class="pub">
+        <h2>Physical activity during hospitalization: Activities
+and preferences of adults versus older adults.</h2>
+<span class="cloudtag-dark">Smart Sensor System</span>
+
+      </div>
+      <div class="pub">
+        <h2>Physical activity during hospitalization: Activities
+and preferences of adults versus older adults.</h2>
+<span class="cloudtag-dark">Smart Sensor System</span>
+      </div>
+
+      <div class="pub">
+        <h2>Physical activity during hospitalization: Activities
+and preferences of adults versus older adults.</h2>
+<span class="cloudtag-dark">Smart Sensor System</span>
+      </div>
+
+    </div>
+    </main>
+    </section>
+    </body>
 
 </html>
 </body>

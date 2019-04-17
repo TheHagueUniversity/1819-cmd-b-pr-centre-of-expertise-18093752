@@ -1,0 +1,21 @@
+.contact{
+  height: 280px;
+  background-color: #FFFFFF;
+}
+
+#main-page{
+  text-align: center;
+}
+
+.contact-img{
+  border-radius: 45px;
+  margin: 30px;
+  width: 90px;
+  height: 90px;
+}
+
+.contact-icons{
+  height: 50px;
+  background-color: #CCCCCC;
+  vertical-align: bottom;
+}

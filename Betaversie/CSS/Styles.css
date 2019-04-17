@@ -1,16 +1,28 @@
 @import url("Fonts.css");
 @import url("Header.css");
-@import url("");
+@import url("Index.css");
+@import url("contact.css");
+
 
 body {
   padding: 0px;
   margin: 0px;
   background-color: #F2F4F8;
-  font-family: Mosk, sans-serif;
+  font-family: 'Mosk', sans-serif;
 }
 
 #main-page{
-  margin: 60px 0px 0px 85px;
+  margin: 110px 0px 0px 0px;
+}
+
+#page-header{
+margin: 0px 1.5% 0px 1.5%;
+}
+
+section{
+padding: 0px 0px 0px 0px;
+text-align: center;
+width:100vw
 }
 
 .dropdown-content{
@@ -19,6 +31,47 @@ body {
 
 .dropdown:hover .dropdown-content{
   display: block;
+}
+
+.onecolumn{
+width: 6.5%;
+margin: 0px 0.75% 20px 0.75%;
+display: inline-block;
+background-color: #EEEEEE;
+text-align: center;
+vertical-align: top;
+
+}
+
+.twocolumn{
+width: 14.5%;
+margin: 0px 0.75% 20px 0.75%;
+display: inline-block;
+background-color: #EEEEEE;
+text-align: center;
+vertical-align: top;
+}
+
+.threecolumns{
+width: 24%;
+margin: 0px 0.75% 20px 0.75%;
+display: inline-block;
+text-align: center;
+vertical-align: top;
+}
+
+.fourcolumns{
+width: 32.75%;
+margin: 0px 0.75% 20px 0.75%;
+display: inline-block;
+text-align: center;
+vertical-align: top;
+}
+
+.fullWidth{
+  width: 70.5%;
+  margin: 0px 0.75% 50px 0.75%;
+  display: inline-block;
 }
 
 ul {
@@ -48,4 +101,45 @@ ul a.tab-links:hover {
 li {
   display: inline-block;
   margin-right: 80px;
+}
+
+.cloudtag-light{
+  color: #006EFF;
+  font-weight: bold;
+  background-color: #DEEDFF;
+  border-radius: 30px;
+  padding: 5px 12px 5px 12px;
+  margin: 20px;
+  display: inline-block;
+}
+
+.cloudtag-dark{
+  color: #FFFFFF;
+  font-weight: bold;
+  background-color: #006EFF;
+  border-radius: 30px;
+  padding: 5px 12px 5px 12px;
+  margin: 20px;
+  display: inline-block;
+}
+
+.circles{
+  border-radius: 30px;
+  font-size: 25px;
+  width: 30px;
+  height: 30px;
+  background-color: #006EFF;
+  color: #FFFFFF;
+  display: inline-block;
+  text-align: center;
+  float: right;
+  margin: 20px;
+}
+
+p{
+  margin: 10px;
+}
+
+h2{
+  margin: 10px;
 }
