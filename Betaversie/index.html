@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+<html>
   <head>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="CSS/Styles.css" type="text/css"/>
     <link rel="stylesheet" href="CSS/Header.css" type="text/css"/>
     <title>Home</title>
   </head>
-<html>
+
 <body>
   <header>
     <nav class="fixed-position">
@@ -41,14 +42,14 @@
         class
        padding left geven in dezelfde styleregel, voor de achtergrond afbeelding of aan de A-->
        <!-- koppel de naam van de SVG aan de class -->
-       <div class="top-container">
-         <div class="search-container">
+       <div class="top-container nopadding">
+         <div class="search-container nopadding">
             <input type="search" name="searchbar" class="searchbar" id="searchbar" placeholder="Typ hier om te zoeken..." />
             <a href="#" class="search-icon"></a>
-            <div class="profile-container">
+            <div class="profile-container nopadding">
               <a class="profile-name">Erwin de Vlugt</a>
               <figure class="profile-img">
-                <img src="Dr_Erwin_de_Vlugt_rond.png" alt="Profiel Foto">
+                <img src="Images/Contact/Dr_Erwin_de_Vlugt_rond.png" alt="Profiel Foto">
               </figure>
               <a href="#" class="profile-menu"></a>
             </div>
@@ -58,6 +59,59 @@
 
   </header>
   <main id="main-page">
+  <section class="hidden" id="publication-modalpanel">
+    <header>
+      <h1>Artikel publiceren</h1>
+    </header>
+    <main>
+      <div class="fourcolumns text-left" id="modal-left">
+        <div class="input">
+          <label for="article-title">Titel artikel:</label>
+          <input type="text" name="article-title" id="article-title" placeholder="Voer hier de titel van het artikel in"/>
+        </div>
+        <div class="input">
+          <label for="article-author">Auteur(s) artikel:</label>
+          <input type="text" name="article-author" id="article-author" placeholder="Voer hier de auteur van het artikel in"/>
+        </div>
+        <div class="input">
+          <label for="publication-author">Auteurs publicatie:</label>
+          <input type="text" name="publication-author" id="publication-author" placeholder="Voer hier de auteur van de publicatie in"/>
+        </div>
+        <div class="input">
+          <label for="publication-title">Titel publicatie:</label>
+          <input type="text" name="publication-title" id="publication-title" placeholder="Voer hier de titel van de publicatie in"/>
+        </div>
+          <div class="input">
+          <label for="publication-url">URL publicatie:</label>
+        <input type="text" name="publication-url" id="publication-url" placeholder="Voer hier de url van de publicatie in"/>
+        </div>
+        <div class="input">
+          <label for="keywords">Keywords:</label>
+          <input type="text" name="keywords" id="keywords" placeholder="Voer hier de zoektermen in"/>
+        </div>
+        <input type="button" name="upload-button" id="upload-button" class="tertiary-button" value="Upload"/>
+      </div>
+      <div class="onecolumn modalspacer">
+        <div class="vertical-line"></div>
+      </div>
+      <div class="fourcolumns text-left" id="modal-right">
+        <div class="input">
+          <label for="keywords">Artikel:</label>
+          <textarea name="article-text" id="article-text" placeholder="Hier komt de artikel text"></textarea>
+        </div>
+      </div>
+      <div class="button-div nopadding">
+        <div class="nopadding fourcolumns text-left ">
+<span id="saved">Concept opgeslagen om 23:15 </span>
+        </div>
+      <input type="button" name="cancel-button" id="cancel-button" value="Cancel" class="secondary-button"/>
+      <input type="button" name="cancel-button" id="preview-button" value="Cancel" class="tertiary-button"/>
+      <input type="button" name="cancel-button" id="publish-button" value="Cancel" class="primary-button"/>
+    </div>
+    </main>
+  </section>
+
+
     <section>
       <ul id="tabs">
         <li><a class="tab-links" href="#">Kenniskringlid</a></li>
@@ -66,32 +120,34 @@
         <li><a class="tab-links" href="#">Partner</a></li>
       </ul>
     </section>
-    <section>
-      <img src="Images/Header.jpg" class="fullWidth" id="header-img"/>
-    </section>
     <!-- De hyperlinks die naar de andere versies (doelgroepen) van het Centre of Expertise leiden;
     docenten, studenten en partners -->
+    
+    <section>
+      <img src="Images/Header.jpg" class="fullWidth" id="header-img" alt="Header Centre of Expertise"/>
+    </section>
+
     <section>
     <main class="stats">
-      <h1>Centre of expertise in cijfers</h1>
-        <div class="threecolumns stats" id="kenniskringleden">
-          <img src="Images/stats.png"/>
-      <h1>46</h1>
-      <span>Kenniskringleden</span>
-        </div>
-
-        <div class="threecolumns stats" id="kenniskringleden">
-          <img src="Images/stats.png"/>
-      <h1>46</h1>
-      <span>Kenniskringleden</span>
-        </div>
-
-      <div class="threecolumns stats" id="kenniskringleden">
-      <img src="Images/stats.png"/>
-      <h1>46</h1>
-      <span>Kenniskringleden</span>
+    <h1>Centre of expertise in cijfers</h1>
+      <div class="threecolumns stats" id="Kenniskringleden">
+        <img class="Icon-size" src="Icons/Icon_kenniskringleden-01.png" alt="Icon kenniskringleden"/>
+        <h1 class="Stats-height">46</h1>
+        <span>Kenniskringleden</span>
       </div>
-      </main>
+
+      <div class="threecolumns stats" id="Publicaties">
+        <img class="Icon-size" src="Icons/Icon_Publicaties-01.png" alt="Icon publicaties"/>
+        <h1 class="Stats-height">56</h1>
+        <span>Publicaties</span>
+      </div>
+
+      <div class="threecolumns stats" id="Artikelen">
+        <img class="Icon-size" src="Icons/Icon_Artikelen-01.png" alt="Icon artikelen"/>
+        <h1 class="Stats-height">78</h1>
+        <span>Artikelen in het Centre of Expertise</span>
+      </div>
+    </main>
       </section>
 
     <section id="Agenda">
@@ -99,78 +155,86 @@
         <h1 id="agenda-head">Agenda</h1>
       </header>
         <main class="agenda">
-    <div class="threecolumns agenda">
-    <h2>19 Februari</h2>
-    <p>Samenwerking GGD Haaglanden en De Haagse Hogeschool in
-    ‘Living Lab’</p>
-    </div>
-    <div class="threecolumns agenda">
-    <h2>29 Januari</h2>
-    <p>Creatief met sensoren werken in 24 uur tijd voor een praktische en
-    betaalbare oplossing</p>
-    </div>
-    <div class="threecolumns agenda">
-    <h2>5 April</h2>
-    <p>De intreerede van het nieuwe lectoraat: 'Impact of Sport'</p>
-    </div>
+      <div class="threecolumns agenda">
+        <h2 class="agenda">19 Februari</h2>
+        <p class="agenda">Samenwerking GGD Haaglanden en De Haagse Hogeschool in ‘Living Lab’</p>
+        <a href="#">Meer info</a>
+      </div>
+      <div class="threecolumns agenda">
+        <h2 class="agenda">29 Januari</h2>
+        <p class="agenda">Creatief met sensoren werken in 24 uur tijd voor een praktische en
+          betaalbare oplossing</p>
+        <a href="#">Meer info</a>
+      </div>
+      <div class="threecolumns agenda">
+        <h2 class="agenda">5 April</h2>
+        <p class="agenda">De intreerede van het nieuwe lectoraat: 'Impact of Sport'</p>
+        <a href="#">Meer info</a>
+      </div>
     </main>
     </section>
     <section class="news">
-    <header>
-    <h1 class="news-head">Nieuws & Updates</h1>
-    <h3 class="news-head">Meest gelezen artikelen</h3>
-    </header>
+      <header class="news-head">
+        <h1 class="news-head">Nieuws & Updates</h1>
+        <h3 class="news-head">Meest gelezen artikelen</h3>
+      </header>
     <main class="news">
-    <div class="fourcolumns news">
-      <h2>“Physical Literacy”; bouwstenen voor een leven lang bewegen van jong tot oud</h2>
-      <p>Hoe mooi zou het zijn als iedereen motorisch vaardig is, kennis heeft over het belang van sport en bewegen en in staat is om een krachtige beweeg-
-omgeving voor zichzelf en anderen te creëeren.</p>
-<span class="cloudtag-light">Revalidatie</span>
-<span class="cloudtag-light">Technology for Health</span>
-    </div>
-    <div class="onecolumn news spacer">
-    </div>
-    <div class="fourcolumns news">
-      <h2>“Physical Literacy”; bouwstenen voor een leven lang bewegen van jong tot oud</h2>
-      <p>Hoe mooi zou het zijn als iedereen motorisch vaardig is, kennis heeft over het belang van sport en bewegen en in staat is om een krachtige beweeg-
-omgeving voor zichzelf en anderen te creëeren.</p>
-<span class="cloudtag-light">Revalidatie</span>
-<span class="cloudtag-light">Technology for Health</span>
-<span class="circles">...</span>
-    </div>
-    <div class="fourcolumns news-hot">
-      <h1>Nieuws</h1>
-      <p class="news-hot">Hoe mooi zou het zijn als iedereen motorisch vaardig is, kennis heeft over het belang van sport en bewegen en in staat is om een krachtige beweeg-
-omgeving voor zichzelf en anderen te creëeren.</p>
-    </div>
-    <div class="onecolumn spacer">
-    </div>
-    <div class="fourcolumns">
+      <div class="fourcolumns news">
+        <h3 class="subkop"><a class="subkop" href="#">“Physical Literacy”; bouwstenen voor een leven lang bewegen van jong tot oud</a></h2>
+        <p>Hoe mooi zou het zijn als iedereen motorisch vaardig is, kennis heeft over het belang van sport en bewegen en in staat is om een krachtige beweeg-
+          omgeving voor zichzelf en anderen te creëeren.</p>
+          <span class="cloudtag-light">Revalidatie</span>
+          <span class="cloudtag-light">Technology for Health</span>
+          <span class="circles">...</span>
+          <img class="circles" src="Images/Contact/Martijn_van_der_Ent.png" alt="Martijn van der Ent"> </img>
+      </div>
+      <div class="onecolumn news spacer">
+      </div>
+      <div class="fourcolumns news">
+        <h3 class="subkop"><a class="subkop" href="#">The patient perspective on the use of information and communication technologies and e-health in rehabilitation </a></h2>
+        <a href="#" class="publication-date">Gepubliceerd op 31 juli 2017 </a>
+        <br />
+          <span class="cloudtag-light">Oncologische zorg</span>
+          <span class="circles">...</span>
+          <img class="circles" src="Images/Contact/Jora_Wolfgram.png" alt="Foto Jora Wolfgram"> </img>
+      </div>
+      <div class="fourcolumns news-hot nopadding">
+        <img class="news-hot" src="Images/Nieuws-foto.png" alt="Screenshot video SenseGlove"/>
+        <h1 class="news-hot" >Nieuws</h1>
+        <h4 class="news-hot">Onderzoeksproject SenseGlove</h4>
+        <p class="news-hot">We ontwikkelen een handschoen voor thuisrevalidatie: SenseGlove. Dit is een handschoen waarmee je virtuele objecten kan aanraken om sneller te revalideren.</p>
+      </div>
+      <div class="onecolumn spacer">
+      </div>
+      <div class="fourcolumns nopadding">
 
-      <h2 class="pub-head">Meest gelezen publicaties</h2>
+      <h3 class="news-head">Meest gelezen publicaties</h2>
 
       <div class="pub">
-        <h2>Physical activity during hospitalization: Activities
-and preferences of adults versus older adults.</h2>
-<span class="cloudtag-dark">Smart Sensor System</span>
-
+        <h3 class="subkop">Physical activity during hospitalization: Activities
+          and preferences of adults versus older adults.</h2>
+          <span class="cloudtag-dark">Smart Sensor System</span>
+          <span class="circles">...</span>
+          <img class="circles" src="Images/Contact/Wil_IJzereef.png" alt="Foto Wil IJzereef"> </img>
       </div>
       <div class="pub">
-        <h2>Physical activity during hospitalization: Activities
-and preferences of adults versus older adults.</h2>
-<span class="cloudtag-dark">Smart Sensor System</span>
+        <h3 class="subkop">Wheelchair Mobility Performance enhancement by changing wheelchair properties; what is the effect
+of grip, seat height and mass?</h2>
+          <span class="cloudtag-dark">Urban Aging</span>
+          <span class="circles">...</span>
+          <img class="circles" src="Images/Contact/Tony_Andrioli.png" alt="Foto Tony Andrioli"> </img>
       </div>
 
       <div class="pub">
-        <h2>Physical activity during hospitalization: Activities
-and preferences of adults versus older adults.</h2>
-<span class="cloudtag-dark">Smart Sensor System</span>
+        <h3 class="subkop">To team up or to battle; how do wheelchair court sports compare regarding wheelchair mobility
+performance? Journal of Sport Science</h2>
+          <span class="cloudtag-dark">Informatie, Technologie en Samenleving</span>
+          <span class="circles">...</span>
+          <img class="circles" src="Images/Contact/Rienk_van_der_Slikke.png" alt="Rienk van der Slikke"> </img>
       </div>
 
-    </div>
+      </div>
     </main>
-    </section>
-    </body>
-
-</html>
+  </section>
 </body>
+</html>

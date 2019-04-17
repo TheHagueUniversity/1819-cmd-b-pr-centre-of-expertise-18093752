@@ -9,6 +9,7 @@ body {
   margin: 0px;
   background-color: #F2F4F8;
   font-family: 'Mosk', sans-serif;
+  color: #8698AA;
 }
 
 #main-page{
@@ -19,10 +20,59 @@ body {
 margin: 0px 1.5% 0px 1.5%;
 }
 
+.primary-button{
+  -webkit-appearance: none;
+  width: 190px;
+  height: 38px;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #006EFF;
+  color: #FFFFFF;
+  border: none;
+  margin:10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.secondary-button{
+  -webkit-appearance: none;
+  width: 190px;
+  height: 38px;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  color: #006EFF;
+  border: solid 2px #CCCCCC;
+  margin:10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tertiary-button{
+  -webkit-appearance: none;
+  width: 190px;
+  height: 38px;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #DFEDFB;
+  color: #006EFF;
+  border: none;
+  margin:10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+
 section{
 padding: 0px 0px 0px 0px;
 text-align: center;
 width:100vw
+}
+
+div{
+  box-sizing: border-box;
+  padding: 20px;
 }
 
 .dropdown-content{
@@ -68,10 +118,28 @@ text-align: center;
 vertical-align: top;
 }
 
+.text-left{
+  text-align: left;
+}
+
+.nopadding{
+padding: 0px;
+}
+
 .fullWidth{
-  width: 70.5%;
+  width: 75.5%;
   margin: 0px 0.75% 50px 0.75%;
   display: inline-block;
+}
+
+
+.vertical-line{
+  margin-top: 50px;
+  display: inline-block;
+  height: 45vh;
+  width: 0px;
+  border-left: solid 1px #CCCCCC;
+  padding: 0px;
 }
 
 ul {
@@ -109,8 +177,9 @@ li {
   background-color: #DEEDFF;
   border-radius: 30px;
   padding: 5px 12px 5px 12px;
-  margin: 20px;
+  margin: 30px 5px 0px 5px;
   display: inline-block;
+  float: left;
 }
 
 .cloudtag-dark{
@@ -119,7 +188,7 @@ li {
   background-color: #006EFF;
   border-radius: 30px;
   padding: 5px 12px 5px 12px;
-  margin: 20px;
+  margin: 30px 5px 0px 5px;
   display: inline-block;
 }
 
@@ -133,13 +202,28 @@ li {
   display: inline-block;
   text-align: center;
   float: right;
-  margin: 20px;
+  margin: 30px 5px 0px 5px;
 }
 
 p{
   margin: 10px;
 }
 
+h1 {
+  color: #474C4F;
+  font-weight: 800;
+}
+
 h2{
   margin: 10px;
+  color: #474C4F;
+}
+
+h3.subkop {
+  padding-left: 10px;
+  color: #474C4F;
+}
+
+a.subkop {
+    text-decoration: none;
 }
