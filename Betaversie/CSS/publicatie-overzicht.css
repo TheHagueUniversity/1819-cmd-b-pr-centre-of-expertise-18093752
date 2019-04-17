@@ -1,0 +1,103 @@
+@import url("styles.css");
+
+div.publication{
+position: relative;
+background-color: #FFFFFF;
+padding: 0px;
+height: 500px;
+vertical-align: bottom;
+text-align: left;
+}
+
+.publication-img{
+position: absolute;
+top: 0px;
+left: 0px;
+width: 100%;
+}
+
+.publication-title{
+margin: 300px 10px 0px 10px;
+
+}
+
+.authors{
+position: absolute;
+bottom: 0px;
+left: 0px;
+border-top: solid 1px #CCCCCC;
+width: 100%;
+}
+
+div.filters-dropdown-content{
+width: 100%;
+margin: 0px;
+margin-top: 10px;
+display: none;
+position: absolute;
+z-index:50;
+background-color: #FFFFFF;
+}
+
+.filters-container{
+position: relative;
+padding: 20px 0px 20px 0px;
+background-color: #FFFFFF;
+}
+
+#type-filter:hover #type-content{
+display: block;
+}
+
+#lectoraat-filter:hover #lectoraat-content{
+display: block;
+}
+
+#sorteren-filter:hover #sorteren-content{
+display: block;
+}
+
+
+
+.filter{
+display: inline-block;
+width:100%;
+margin: 5px;
+}
+
+img.views-icon{
+position: absolute;
+bottom: 80px;
+left: 30px;
+width: 20px;
+height: 20px;
+}
+
+img.thumb-icon{
+position: absolute;
+bottom: 80px;
+right: 30px;
+width: 20px;
+height: 20px;
+}
+
+img.notifications-icon{
+position: absolute;
+top: 60px;
+right:20px;
+width: 20px;
+height: 20px;
+}
+
+img.bookmark-icon{
+position: absolute;
+top: 30px;
+right: 20px;
+width: 20px;
+height: 20px;
+}
+
+img.arrow-icon{
+  width: 20px;
+  height: 20px;
+}

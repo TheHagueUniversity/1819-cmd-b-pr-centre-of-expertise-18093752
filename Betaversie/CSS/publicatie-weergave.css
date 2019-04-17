@@ -5,25 +5,38 @@
   top:  30px;
   right: 30px;
   background-color: #F2F4F8;
-  }
+}
 
 .publication-header{
   position: relative;
-  }
+}
 
 #abstract {
+  position:relative;
   background-color: #FFFFFF;
   width: 850px;
-  }
+  margin: auto;
+  padding: 10px 40px 30px 40px;
+  box-sizing: border-box;
+  color: #434343;
+}
+
+#abstract>p{
+  margin: 10px 0px 10px 0px;
+}
+
 
 #edit-text {
-  margin-left: 80px;
+  position: absolute;
+  top: 30px;
+  right: 60px;
   /* position of edit text  */
 }
 
 #edit-icon {
-  margin-left: 10px;
-  float: right;
+  position:absolute;
+  top: 20px;
+  right: 20px;
   /* position of edit icon */
 }
 
@@ -34,7 +47,7 @@ a.pencil-icon {
   background-repeat: no-repeat;
   width: 25px;
   height: 25px;
-  }
+}
 
 #download-button {
   border: none;
@@ -44,28 +57,31 @@ a.pencil-icon {
   padding: 14px 30px;
   font-size: 14px;
   display: inline-block;
-  }
+  margin-top: 20px;
+}
+
+
 
 a.thumb-up-icon, a.bell-icon, a.bookmark-icon{
   /*padding: 10px 10px 10px 30px; backgroundimage ignores padding*/
   display: inline-block;
-  margin:10px;
+  margin:30px 30px 0px 30px;
   background-repeat: no-repeat;
   width: 25px;
   height: 25px;
-  }
+}
 
   a.thumb-up-icon {
   background-image: url(../Icons/thumb-up.svg);
-  }
+}
 
   a.bell-icon {
   background-image: url(../Icons/bell_gray.svg);
-  }
+}
 
   a.bookmark-icon {
   background-image: url(../Icons/bookmark.svg);
-  }
+}
 
   a.embed-icon, a.fb-icon, a.li-icon, a.whatsapp-icon, a.twitter-icon {
   /*padding: 10px 10px 10px 30px; backgroundimage ignores padding*/
@@ -74,32 +90,44 @@ a.thumb-up-icon, a.bell-icon, a.bookmark-icon{
   background-repeat: no-repeat;
   width: 25px;
   height: 25px;
-  }
+}
 
 a.embed-icon {
   background-image: url(../Icons/embed.svg);
-  }
+}
 
 a.fb-icon {
   background-image: url(../Icons/fb.svg);
-  }
+}
 
 a.li-icon {
   background-image: url(../Icons/li.svg);
-  }
+}
 
 a.whatsapp-icon {
   background-image: url(../Icons/whatsapp.svg);
-  }
+}
 
 a.twitter-icon {
   background-image: url(../Icons/twitter.svg);
-  }
+}
 
 #social-media-container {
   background-color: #FFFFFF;
-  }
+  border-radius: 5px;
+  margin-top: 30px;
+}
 
 article.fullWidth{
   background-color: #FFFFFF;
-  }
+}
+
+.icon-box{
+  display: inline-block;
+  width: 100px;
+  padding: 0px;
+}
+
+span.icon-text{
+  display: block;
+}
