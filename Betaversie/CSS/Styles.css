@@ -1,8 +1,4 @@
-@import url("Fonts.css");
-@import url("Header.css");
-@import url("Index.css");
-@import url("contact.css");
-
+@import url("fonts.css");
 
 body {
   padding: 0px;
@@ -225,6 +221,40 @@ h3.subkop {
   color: #474C4F;
 }
 
-a.subkop {
-    text-decoration: none;
+a.subheader {
+  text-decoration: none;
+}
+
+a.pagination, a.pagination-nav-1, a.pagination-nav-2{
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 45px;
+  font-weight: 700;
+}
+
+a.pagination {
+  background-color: #FFFFFF;
+  border: 1px solid #DAE4EF;
+  color: #474C4F;
+}
+
+a.pagination-nav-1 {
+  background-color: #F2F4F8;
+  border: 1px solid #DAE4EF;
+  color: #8698AA;
+}
+/* Inactieve button voor paginatie */
+
+a.pagination-nav-2 {
+  background-color: #006EFF;
+  color: #FFFFFF;
+
+}
+/* Actieve / huidige pagina die actief is */
+
+section#pagination-padding {
+  padding-top: 60px;
 }

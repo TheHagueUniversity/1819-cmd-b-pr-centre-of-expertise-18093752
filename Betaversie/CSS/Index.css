@@ -1,3 +1,4 @@
+@import url("styles.css");
 
 #header-img{
   margin-bottom: 25px;
@@ -105,7 +106,7 @@ h1.Stats-height {
   margin-bottom: 15px;
 }
 
-.publication-date{
+.publication-date {
   text-align: left;
   padding: 0px 0px 0px 10px;
 }
