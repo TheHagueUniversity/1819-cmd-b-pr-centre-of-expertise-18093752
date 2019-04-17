@@ -1,0 +1,31 @@
+@import url("styles.css");
+
+#download-button {
+  border: none;
+  background-color: blue;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+a.thumb-up-icon, a.bell-icon, a.bookmark-icon{
+  /*padding: 10px 10px 10px 30px; backgroundimage ignores padding*/
+  display: inline-block;
+  margin:30px;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  }
+
+  a.thumb-up-icon {
+    background-image: url(../Icons/thumb-up.svg);
+  }
+
+  a.bell-icon {
+    background-image: url(../Icons/bell_gray.svg);
+  }
+
+  a.bookmark-icon {
+    background-image: url(../Icons/bookmark.svg);
+  }

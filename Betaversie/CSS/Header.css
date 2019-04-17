@@ -25,9 +25,7 @@ nav {
 a.information-icon, a.bullhorn-icon, a.file-multiple-icon, a.email-icon, a.account-icon, a.bell-icon,
 a.message-processing-icon, a.cog-icon, a.help-circle-icon {
   background-image: url(../Icons/information.svg);
-  /*padding-left: 30px;
-  padding-bottom: 10px;*/
-  /*padding: 10px 10px 10px 30px; backgroundimage trekt zich niks aan van de padding*/
+  /*padding: 10px 10px 10px 30px; backgroundimage ignores padding*/
   margin:30px;
   background-repeat: no-repeat;
   display: block;
@@ -153,19 +151,19 @@ a.message-processing-icon, a.cog-icon, a.help-circle-icon {
   position: fixed;
   top: 80px;
   left: 50vw;
-   width: 70vw;
-   height: 83vh;
-   background-color: white;
-   transform: translate(-50%,0%);
-   box-shadow: 0px 5px 10px  #AAAAAA;
-   border-radius: 10px;
-   overflow-y: scroll;
+  width: 70vw;
+  height: 83vh;
+  background-color: white;
+  transform: translate(-50%,0%);
+  box-shadow: 0px 5px 10px  #AAAAAA;
+  border-radius: 10px;
+  overflow-y: scroll;
 }
 
 .hidden{
   display: none;
 }
-/* verbergt tijdelijk het modal panel */
+/* hides the modal panel (temporarely) */
 
 input[type=text]{
   box-sizing: border-box;
@@ -178,7 +176,7 @@ input[type=text]{
   padding-left: 10px;
 }
 
-textarea{
+textarea {
   width: 100%;
   height: 45vh;
   border-radius: 5px;
@@ -204,7 +202,6 @@ textarea{
   height: 100%;
   padding: 0;
 }
-
 
 
 /* bovenaan de algemene gegevens die zich herhalen samenvoegen in 1 CSS, de url source apart in een eigen CSS regel

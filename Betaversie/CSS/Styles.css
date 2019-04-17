@@ -1,4 +1,5 @@
 @import url("fonts.css");
+@import url("header.css");
 
 body {
   padding: 0px;
@@ -139,30 +140,6 @@ padding: 0px;
   padding: 0px;
 }
 
-ul {
-  list-style-type: none;
-  margin: auto;
-  text-align: center;
-}
-
-ul a.tab-links {
-  text-decoration: none;
-  color: #8698AA;
-}
-
-ul a.tab-links:active {
-  text-decoration: none;
-  color: #8698AA;
-  border-bottom: 3px solid #006EFF;
-}
-
-ul a.tab-links:hover {
-  text-decoration: none;
-  color: #002045;
-}
-
-/* styling puur voor de vier hyperlinks op de homepage */
-
 li {
   display: inline-block;
   margin-right: 80px;
@@ -246,14 +223,14 @@ a.pagination-nav-1 {
   border: 1px solid #DAE4EF;
   color: #8698AA;
 }
-/* Inactieve button voor paginatie */
+/* Inactive button pagination */
 
 a.pagination-nav-2 {
   background-color: #006EFF;
   color: #FFFFFF;
 
 }
-/* Actieve / huidige pagina die actief is */
+/* Active / Current page */
 
 section#pagination-padding {
   padding-top: 60px;
